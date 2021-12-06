@@ -1,222 +1,286 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html class="no-js" lang="en">
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mihir Gupta</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
 
-        <title>Mihir Gupta</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Mihir Gupta</a>
-                </div>
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Mihir Gupta</h1>
+            <h2>Computer Science Student at UC San Diego</h2>
+            <a href="./resume.pdf" target="__blank" class="btn-rounded-white">View Resume</a>
+        </div>
+        <!-- End #lead-content -->
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+        <div id="lead-overlay"></div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container">
-                    <h1 class="home__title">Hello, I'm Mihir.</h1>
-                    <p class="home__text">I'm a second-year computer science student at UC San Diego with experience in mobile development, web development, and machine learning.
-                        I'm looking to learn and explore new areas in computer science and also to leverage my existing skillset to contribute to software projects!
-                    </p>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"></a>
-                    </div>
-
-                </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
                     <div class="about__img">
-                        <img src="assets/img/0.jpeg" alt="">
-                    </div>
-
-                    <div>
-                        <h2 class="about__subtitle">Mihir Gupta</h2>
-                        <span class="about__profession">Computer Science Student at UC San Diego</span>
-                        <p class="about__text">I'm in my second year of studying computer science and am interested in learning and expanding my skillset. I also love to cook, play badminton, and spend time with my dog.</p>
-
-                        <div class="about__social">
-                            <a href="https://github.com/gmihir" target="_blank" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="https://www.linkedin.com/in/mihir-gupta-50b299168/" target="_blank" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="https://gmihir.github.io" target="_blank" class="about__social-icon"><i class='bx bx-globe' ></i></a>
-                        </div>
+                        <img src="images/0.jpeg" alt="">
                     </div>
                 </div>
-            </section>
-
-             <!--===== projects =====-->
-             <section class="projects section" id="projects">
-                <h2 class="section-title">Projects</h2>
-
-
-                <div class="projects__container bd-grid">
-                    <div class="projects__img">
-                        <img class="img_blur" src="assets/img/ucsd-logo.png" alt="">
-
-                        <div class="projects__link">
-                            <h4 class="project__text">Implemented new features and improved existing features for the official UCSD mobile app, written in Flutter.</h4>
-                            <div class="projects__button">
-                                <a href="https://github.com/gmihir/campus-mobile.git" target="_blank" class="myButton">Visit</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="projects__img">
-                        <img src="assets/img/collegeshark-logo.png" alt="">
-
-                        <div class="projects__link">
-                            <h4 class="project__text">Developed a full-stack web application to streamline the college application process, using Flask, React, Azure SQL, and Firebase.</h4>
-                            <div class="projects__button">
-                                <a href="https://college-shark.com" target="_blank" class="myButton">Visit</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects__img">
-                        <img src="assets/img/credit-card-fraud-detection-logo.png" alt="">
-                        <div class="projects__link">
-                            <h4 class="project__text">Analyzed and improved fraudulent credit card transaction detection with Python, scikit-learn, Pandas, and Seaborn.</h4>
-                            <div class="projects__button">
-                                <a href="https://github.com/bew030/credit-card-fraud-detection-.git" target="_blank" class="myButton">Visit</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects__img">
-                        <img src="assets/img/bae-systems-logo.png" alt="">
-
-                        <div class="projects__link">
-                            <h4 class="project__text">Augmented existing obsolescence prediction techniques with machine learning (RandomForest, Logistic Regression), achieving margin of error of 15 months.</h4>
-                            <div class="projects__button">
-                                <a href="https://github.com/gmihir" target="_blank" class="myButton">Visit</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-8">
+                    <p>
+                        I'm a third-year computer science student at UC San Diego with experience in backend development, web development, 
+                        and mobile development. I've worked at CarMax as a SWE intern and I'm currently working at UCSD as a 
+                        mobile developer. I'm looking to learn and explore new areas in computer science and also to leverage my
+                        existing skillset to contribute to software projects!
+                    </p>
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
 
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="May 2020 – Present">
+                <h3>UCSD Mobile</h3>
+                <h4>Mobile Developer</h4>
+                <p>
+                    I currently work on the official UCSD mobile application (iOS/Android) using Flutter and AWS. My primary role is to 
+                    create new features and improve existing processes. I use Flutter for frontend development and create APIs using Node.js 
+                    in AWS for backend development.
+                </p>
+            </div>
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+            <div data-date="June 2021 – August 2021">
+                <h3>CarMax Inc.</h3>
+                <h4>Software Engineering Intern</h4>
+                <p>
+                    I was a software engineering intern at CarMax in the summer of 2021. I was a part of the Systems Integration team and 
+                    worked on building an internal tool for tracking and resolving issues with customer credit/debit/ACH payments. I used Microsoft 
+                    Azure, React, and .NET (C#) to build this tool.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
 
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">Programming Languages</h3>
-                        <span class="skills__name">Java</span>
-                        <span class="skills__name">Python</span>
-                        <span class="skills__name">Node.js</span>
-                        <span class="skills__name">Dart</span>
-                        <span class="skills__name">HTML</span>
-                        <span class="skills__name">CSS</span>
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <!-- <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+            </p>
+        </div>
+        End .education-block -->
 
-                        
-                        <h3 class="skills__subtitle">Tools</h3>
-                        <span class="skills__name">Git</span>
-                        <span class="skills__name">Flutter</span>
-                        <span class="skills__name">Flask</span>
-                        <span class="skills__name">React</span>
-                        <span class="skills__name">AWS API Gateway</span>
-                        <span class="skills__name">AWS Lambda</span>
-                        <span class="skills__name">scikit-learn</span>
-                        <span class="skills__name">Pandas</span>
-                        <span class="skills__name">Seaborn</span>
+        <div class="education-block">
+            <h3>University of California, San Diego</h3>
+            <span class="education-date">September 2019 - December 2022</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <ul>
+                <li>
+                    GPA: 3.92/4.00
+                </li>
+                <li>
+                    Minor in Business
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
 
-                        <h3 class="skills__subtitle">Databases</h3>
-                        <span class="skills__name">Azure SQL</span>
-                        <span class="skills__name">Firebase</span>
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/vaccine.jpeg" />
                     </div>
-
-                    <!-- <div class="skills__img">
-                        <img src="assets/img/" alt="">
-                    </div> -->
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>VaxBot San Diego</h3>
+                        <p>
+                            I built a Twitter bot using Python and REST APIs that finds available COVID-19 vaccines at local San Diego pharmacies (CVS, Vons, Walgreens). It helped various
+                            family members and friends in March and has also been helpful for finding booster shots.
+                        </p>
+                        <a href="https://www.twitter.com/vaxbotsd">View Project</a>
+                        <br/>
+                        <br/>
+                        <a href="https://github.com/gmihir/vaccine_bot">View Source</a>
+                    </div>
+                    <!-- End .project-info -->
                 </div>
-            </section>
+                <!-- End .project -->
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">m9gupta (at) ucsd.edu</span>
-
-                        <h3 class="contact__subtitle">PHONE</h3>
-                        <span class="contact__text">(858) 275-4018</span>
-
-                        <h3 class="contact__subtitle">Located in San Diego, CA</h3>
-
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/shark.jpg" />
                     </div>
-
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>College Shark</h3>
+                        <p>
+                            I led a group project to build a full stack web application to help future undergraduates find the right college for them.
+                            We used Flask (Python), React, Microsoft SQL Server, and Firebase to develop and host the application. 
+                        </p>
+                        <a href="https://college-shark.com">View Project</a>
+                        <br/>
+                        <br/>
+                        <a href="https://github.com/gmihir/college-shark">View Source</a>
+                    </div>
                     
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">MIHIR GUPTA</h2>
-                    <p class="footer__text">This website will be updated regularly to reflect my current interests and achievements.</p>
+                    <!-- End .project-info -->
                 </div>
 
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/car.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Car Comparison Service</h3>
+                        <p>
+                            While I was at CarMax, I was a finalist in their internal hackathon. I worked with my team to
+                            build web crawlers to scrape competitor websites as well as valuation tools. We also built
+                            the cloud infrastructure in Microsoft Azure (Azure Functions) to demonstrate the scalability of the idea.
+                        </p>
+                    </div>
+                    
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Node.js</li>
+            <li>Dart</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>AWS Lambda</li>
+            <li>AWS API Gateway</li>
+            <li>AWS DynamoDB</li>
+            <li>Azure Functions</li>
+            <li>Azure DevOps</li>
+            <li>Azure CosmosDB</li>
+            <li>Azure ApplicationInsights</li>
+            <li>React</li>
+            <li>Flask</li>
+            <li>.NET</li>
+            <li>Flutter</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Contact Me!</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/f/mayvwrnd">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
                     <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="#projects" class="footer__link">Projects</a></li>
-                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                        <li>
+                            <a href="https://github.com/gmihir" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/mihir-gupta" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100006424010230" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
                     </ul>
                 </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">LINKS</h2>
-                    <a href="https://github.com/gmihir" target="_blank" class="footer__social"><i class='bx bxl-github' ></i></a>
-                    <a  href="https://www.linkedin.com/in/mihir-gupta-50b299168/" target="_blank" class="footer__social"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://gmihir.github.io" target="_blank" class="footer__social"><i class='bx bx-globe' ></i></a>
-                </div>
-
-
             </div>
-        </footer>
+        </div>
+    </footer>
+    <!-- End footer -->
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>
